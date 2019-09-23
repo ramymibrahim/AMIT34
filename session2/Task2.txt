@@ -1,3 +1,12 @@
 Research Task
 1. sprintf function
 2. Switch case
+3. Consider the following array 
+    $students = [
+        ["name"=>"Ahmed","age"=>21],
+        ["name"=>"Ibrahim","age"=>20],
+        ["name"=>"Sherif","age"=>30],
+        ["name"=>"Youssef","age"=>25]
+    ];
+    print 4 divs using foreach.Each div will contain the name and the age values
+        
