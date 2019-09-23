@@ -1,0 +1,15 @@
+Tasks
+
+1. GET Request vs POST Request
+2. How to view Request using any browser (prefered Google chrome)
+3. single quotes vs double quotes in echo function
+
+4. Define 3 variables for youe name, age and job
+    Then echo the value of the 3 variables inside nice HTML page
+
+
+
+5.Review
+echo
+gettype
+var_dump
