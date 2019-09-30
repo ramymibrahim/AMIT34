@@ -39,10 +39,18 @@ Sherif has password = 12345
 */
 
 //var_dump($_FILES['photo']);
+
 $name=$_REQUEST['name'];
 $password=$_REQUEST['password'];
-$users = ["Ahmed"=>"123","Islam"=>"1234","Sherif"=>"12345"];
+$users = [
+    "Ahmed"=>"123"
+    ,"Islam"=>"1234"
+    ,"Sherif"=>"12345"
+];
+
 if(isset($users[$name]) && $users[$name]==$password){
+    header('Location: https://google.com');
+    die();
     echo "Welcome $name ";
 }
 else{

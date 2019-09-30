@@ -1,4 +1,8 @@
 <?php
+//$_GET
+//$_POST
+//$_REQUEST
+var_dump($_POST);
 $color = $_REQUEST['color'];
 $count = $_REQUEST['count'];
 ?>

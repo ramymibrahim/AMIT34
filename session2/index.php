@@ -9,11 +9,21 @@
 </head>
 
 <body>
-    <form method="GET" action="create.php">
+<form method="POST" action="create.php">
         <input name="count" type="number" placeholder="Count" />
         <input name="color" placeholder="Color" type="color" />
         <button>Create</button>
     </form>
+
+    
+
+    <form method="POST" action="session2.php">
+        <input type="text" name="name"  placeholder="Name" />
+        <input type="password" name="password"  placeholder="Password" />
+        <button>Login</button>
+    </form>
+
+    
 </body>
 
 </html>

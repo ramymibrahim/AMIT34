@@ -1,0 +1,6 @@
+//Create function MultiplyBy2 and analyze call stack of
+//MultiplyBy2(MultiplyBy2(MultiplyBy2(MultiplyBy2(MultiplyBy2(5.25)))));
+
+-------------
+//create function get_min($arr) that returns the minimum value in a given array
+//$arr=[-12,14,29,0,48,-44];

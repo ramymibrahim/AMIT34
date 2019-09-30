@@ -21,7 +21,7 @@ $name = "Ramy";
 </html>
 <?php
 
-/*
+
 echo "<h1>Welome to session 1</h1>";
 
 $names=["Ramy","Ahmed","Ibrahim"];
@@ -42,7 +42,6 @@ echo "<br />";
 $student = ["name"=>"Ramy","age"=>19,"course"=>"PHP Course",12];
 echo "Student name:".$student["name"]." age:".$student["age"].", course:".$student["course"];
 echo "<br />";
-*/
 /*
 
 $price=15;
