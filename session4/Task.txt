@@ -1,0 +1,2 @@
+1.Create Chess classes (only 3) or XO
+2.Relation for comments table
