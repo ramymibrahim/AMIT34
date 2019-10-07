@@ -1,26 +1,46 @@
 <?php
-$name = "Ramy";
+$name=["Ramy","Mohamed","Ahmed"];//Zero indexed array
+$student=["name"=>"Ramy","age"=>32,"course"=>'PHP'];
+$age = 30;
+echo $student['name'];
+
+echo "My Name is ".$name[0]." and I'm $age years old <br />";
+echo 'My Name is ' . $name[1] . ' and I\'m ' . $age . ' years old <br />';
+
+/*
++
+-
+/
+*
+%
+
+*/
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
     <table style="border:1px solid black">
         <tr>
             <td>
-                <?php echo $name; ?>
+                <h1><?php echo $name1 . " " . $age; ?></h1>
+                <h2><?php echo 'Ramy'; ?></h2>
             </td>
         </tr>
     </table>
 </body>
+
 </html>
 <?php
-
+/*
 
 echo "<h1>Welome to session 1</h1>";
 
@@ -61,7 +81,7 @@ $total = 5%2;
 // >=
 // <=
 // ===
-
+/*
 $age=109;
 
 if($age<20){
@@ -76,4 +96,5 @@ else{
     echo "You should retire";
     echo "<br />";
 }
+*/
 ?>
