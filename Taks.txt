@@ -4,3 +4,12 @@
 -------------
 //create function get_min($arr) that returns the minimum value in a given array
 //$arr=[-12,14,29,0,48,-44];
+
+
+1. Search how to prevent SQL injection using mysqli
+username=author1
+password=' or  1=1 -- 
+' or (username='author1') -- 
+
+
+2. create new post
