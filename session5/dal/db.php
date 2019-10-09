@@ -10,4 +10,15 @@ function get_results($q){
     mysqli_close($con);
     return $result;
 }
+
+
+function get_result($q){    
+    $con = mysqli_connect('localhost', 'root', '', 'amit33');
+    mysqli_set_charset($con, 'utf8');
+    $query = mysqli_query($con, $q);
+    $row = mysqli_fetch_assoc($query);
+    mysqli_close($con);
+    return $row;
+}
+
 ?>
