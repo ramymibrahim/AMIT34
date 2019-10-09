@@ -1,6 +1,12 @@
 <?php
-include('layout/header.php');
-include_once('logic/posts.php');
+include_once('helpers/config.php');
+include_once(base_path.'/helpers/session.php');
+if($user==null){
+  header('Location:login.php');
+  die();
+}
+include(base_path.'/layout/header.php');
+include_once(base_path.'/logic/posts.php');
 if(isset($_GET['id'])){
   $post = get_post($_GET['id']);
 }

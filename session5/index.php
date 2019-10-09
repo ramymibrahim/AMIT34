@@ -1,4 +1,5 @@
 <?php
+include_once('helpers/config.php');
 include('layout/header.php');
 include('logic/posts.php');
 if(isset($_GET['cat_id'])){

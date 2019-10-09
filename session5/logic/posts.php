@@ -1,5 +1,5 @@
 <?php
-include_once('dal/db.php');
+include_once(base_path.'/dal/db.php');
 function get_posts($cat_id = null)
 {
     $query = "SELECT posts.*,users.name from posts INNER JOIN users 

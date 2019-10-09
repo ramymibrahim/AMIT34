@@ -1,11 +1,12 @@
 <?php
+include_once('helpers/config.php');
 include_once('helpers/session.php');
 if ($user!=null) {
   header('Location:index.php');
   die();
 }
 
-include('logic/users.php');
+include(base_path.'/logic/users.php');
 $error = '';
 if (isset($_POST['username']) && isset($_POST['password'])) {
   $user = get_user($_POST['username'], $_POST['password']);
