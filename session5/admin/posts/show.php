@@ -3,8 +3,8 @@
 include_once('../../helpers/config.php');
 include_once(base_path . '/helpers/session.php');
 include_once(base_path . '/layout/header.php');
-include_once(base_path . '/logic/categories.php');
-$categories = get_categories();
+include_once(base_path . '/logic/posts.php');
+$posts = get_posts();
 ?>
 
 <!-- Page Header -->
@@ -30,20 +30,30 @@ $categories = get_categories();
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Name</th>
+                        <th>Title</th>
+                        <th>Image</th>
+                        <th>Publish Date</th>
+                        <th>Category</th>
+                        <th>User</th>
                         <th width="350px">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php
-                    foreach ($categories as $category) {
+                    foreach ($posts as $post) {
                         ?>
                         <tr>
-                            <td><?php echo $category['id'];?></td>
-                            <td><?php echo $category['name'];?></td>
+                            <td><?php echo $post['id'];?></td>
+                            <td><?php echo $post['title'];?></td>
                             <td>
-                                <a href="update.php?id=<?php echo $category['id'];?>" class="btn btn-primary">update</a>
-                                <a href="delete.php?id=<?php echo $category['id'];?>" class="btn btn-danger" onclick="return confirm('Are you sure ?');">delete</a>
+                                <img width="100px" src="<?php echo base_url.'/img/'.$post['image']?>" />                                
+                            </td>
+                            <td><?php echo $post['publish_date'];?></td>
+                            <td><?php echo $post['category_name'];?></td>
+                            <td><?php echo $post['name'];?></td>
+                            <td>
+                                <a href="update.php?id=<?php echo $post['id'];?>" class="btn btn-primary">update</a>
+                                <a href="delete.php?id=<?php echo $post['id'];?>" class="btn btn-danger" onclick="return confirm('Are you sure ?');">delete</a>
                             </td>
                         </tr>
 

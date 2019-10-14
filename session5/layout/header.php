@@ -41,10 +41,10 @@ $categories = get_categories();
                         <a class="nav-link" href="<?php echo base_url.'/';?>index.php">Home</a>
                     </li>
                     <?php
-                    foreach ($categories as $category) {
+                    foreach ($categories as $_category) {
                         ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo base_url.'/';?><?php echo 'index.php?cat_id=' . $category['id']; ?>"><?php echo $category['name']; ?></a>
+                            <a class="nav-link" href="<?php echo base_url.'/';?><?php echo 'index.php?cat_id=' . $_category['id']; ?>"><?php echo $_category['name']; ?></a>
                         </li>
                     <?php
                     }
