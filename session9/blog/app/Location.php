@@ -4,11 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Category extends Model
+class Location extends Model
 {
-    //
+    
     public function items()
     {
-        return $this->hasMany('App\Item');
+        return $this->belongsToMany('App\Item');
     }
 }
