@@ -12,3 +12,8 @@
 */
 
 Route::get('/','PageController@index');
+
+Route::get('/items/{id}','ItemController@show');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
